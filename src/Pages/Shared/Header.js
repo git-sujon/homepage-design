@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FiShoppingBag, FiSearch, FiUser } from "react-icons/fi";
 
-import logo from '../../Resource/Image_website/Logo/logo.png'
+import logo from '../../Resource/Images/Logo/logo.png'
 
 
 const Header = () => {
