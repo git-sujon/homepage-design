@@ -1,6 +1,6 @@
-import React, { useContext, useState } from "react";
+import React, {  useState } from "react";
 import { Link } from "react-router-dom";
-import { FiShoppingBag, FiSearch, FiUser } from "react-icons/fi";
+
 
 import logo from '../../Resource/Images/Logo/logo.png'
 
@@ -14,7 +14,7 @@ const Header = () => {
     <>
 
       <nav x-data={` ${{ isOpen: false }}`} className="bg-[#f5f5f7] ">
-        <div className="container max-w-[980px] py-2 mx-auto ">
+        <div className=" px-[190px]  mx-auto py-2  ">
           <div className="lg:flex lg:items-center">
             <div className="flex items-center justify-between">
               <Link to="/">

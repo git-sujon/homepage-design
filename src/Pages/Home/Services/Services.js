@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+
 import ServicesCard from "./ServicesCard";
 
 import phone_system_image from "../../../Resource/Images/Services/Phone_System.png";
@@ -36,7 +36,7 @@ const Services = () => {
       category: "Cabling & Wifi",
       title: "Business Telephone Lines & Analogue & ISDN",
       description: "",
-      image_url: { cabling_Wifi_image },
+      image_url: `${ cabling_Wifi_image }`,
     },
     {
       id: "05",
@@ -48,13 +48,13 @@ const Services = () => {
   ];
 
   return (
-    <div className="pt-16">
-      <p className="font-semibold text-[#29303b] text-[30px] mb-5">
+    <div className="pt-16  pl-[190px]   ">
+      <p className="font-semibold text-[#29303b] text-[30px] mb-5 ">
         Services.
         <span className="text-[#888f97]">Here where the fun begins.</span>
       </p>
       <div className="container mx-auto my-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {servicesData?.map((service) => (
             <ServicesCard key={service.id} service={service} />
           ))}
