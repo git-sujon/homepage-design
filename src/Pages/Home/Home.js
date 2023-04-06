@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "../Home/Banner/Banner";
 import Services from "./Services/Services";
 import Help from "./Help/Help";
+import MidlandNetworks from "./MidlandNetworks/MidlandNetworks";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner></Banner>
       <Services></Services>
       <Help></Help>
+      <MidlandNetworks></MidlandNetworks>
     </div>
   );
 };
