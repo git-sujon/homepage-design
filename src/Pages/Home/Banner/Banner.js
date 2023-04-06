@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImage from "../../Resource/Image_website/banner.jpg";
+import bannerImage from "../../../Resource/Image_website/banner.jpg";
 import Typewriter from "typewriter-effect";
 const Banner = () => {
 
@@ -7,7 +7,7 @@ const textData=[ "Telecom", "Providers", "Engineers", "Data Cabler", "IT Experts
 
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat lg:h-screen text-[#29303B]"
+      className="relative bg-cover bg-center bg-no-repeat lg:h-screen text-[#29303B] "
       style={{ backgroundImage: `url(${bannerImage})` }}
     >
       <div className="absolute inset-0    bg-white/50 md:bg-white/0"></div>
