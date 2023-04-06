@@ -1,6 +1,6 @@
 import React from "react";
 import bannerImage from "../../Resource/Image_website/banner.jpg";
-
+import Typewriter from "typewriter-effect";
 const Banner = () => {
 
 const textData=[ "Telecom", "Providers", "Engineers", "Data Cabler", "IT Experts", "Experienced" , "Passionate" ]
@@ -16,7 +16,17 @@ const textData=[ "Telecom", "Providers", "Engineers", "Data Cabler", "IT Experts
         <div class="max-w-xl ">
           <h1 class="text-3xl font-semibold">
             Midland Network <br />
-            <div>We are...</div>
+            We are 
+            <span className="inline-block text-[#66c4f2] ml-1">
+            <Typewriter
+
+            options={{
+              strings: [ "Telecom", "Providers", "Engineers", "Data Cabler", "IT Experts", "Experienced" , "Passionate" ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+            </span>
           </h1>
 
           <p class="mt-4 max-w-lg sm:leading-relaxed">
