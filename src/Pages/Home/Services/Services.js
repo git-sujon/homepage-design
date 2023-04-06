@@ -1,5 +1,7 @@
-
 import ServicesCard from "./ServicesCard";
+import Glider from "react-glider";
+import 'glider-js/glider.min.css';
+
 
 import phone_system_image from "../../../Resource/Images/Services/Phone_System.png";
 import lines_calls_image from "../../../Resource/Images/Services/Lines_Calls.png";
@@ -36,7 +38,7 @@ const Services = () => {
       category: "Cabling & Wifi",
       title: "Business Telephone Lines & Analogue & ISDN",
       description: "",
-      image_url: `${ cabling_Wifi_image }`,
+      image_url: `${cabling_Wifi_image}`,
     },
     {
       id: "05",
@@ -48,17 +50,42 @@ const Services = () => {
   ];
 
   return (
-    <div className="pt-16  pl-[190px]   ">
+    <div className="pt-16  lg:pl-[190px]  px-5 ">
       <p className="font-semibold text-[#29303b] text-[30px] mb-5 ">
         Services.
         <span className="text-[#888f97]">Here where the fun begins.</span>
       </p>
-      <div className="container mx-auto my-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {servicesData?.map((service) => (
-            <ServicesCard key={service.id} service={service} />
-          ))}
-        </div>
+      <div className=" my-10">
+        
+          <Glider
+            className="glider-container"
+            draggable
+            hasArrows
+         
+            slidesToShow={2.5}
+            slidesToScroll={1}
+
+            responsive={[
+              {
+                breakpoint: 400,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  itemWidth: 500,
+                  duration: 0.25,
+                },
+              },
+            ]}
+
+            
+          >
+   
+             {servicesData?.map((service) => (
+              <ServicesCard key={service.id} service={service} />
+            ))}
+      
+          </Glider>
+       
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const Header = () => {
     <>
 
       <nav x-data={` ${{ isOpen: false }}`} className="bg-[#f5f5f7] ">
-        <div className=" px-[190px]  mx-auto py-2  ">
+        <div className=" lg:px-[190px] px-5  mx-auto py-2  ">
           <div className="lg:flex lg:items-center">
             <div className="flex items-center justify-between">
               <Link to="/">
