@@ -12,7 +12,7 @@ const MidlandNetworks = () => {
 
     const infoData = [{
         "id": "1",
-        "icon":{guard},
+        "icon":guard,
         
         "text": "Quality assurance.",
         "text_2": "Only the best for you.",
@@ -21,7 +21,7 @@ const MidlandNetworks = () => {
     },
     {
         "id": "2",
-        "icon":{love},
+        "icon":love,
         
         "text": "Price match. ",
         "text_2": "Quality great deals promise.",
@@ -29,8 +29,8 @@ const MidlandNetworks = () => {
         "text_color2": "#ea3357"
     },
     {
-        "id": "2",
-        "icon":{m},
+        "id": "3",
+        "icon":tick,
         
         "text": "Customer service. ",
         "text_2": "More than just shopping.",
@@ -38,8 +38,8 @@ const MidlandNetworks = () => {
         "text_color2": "#528bff"
     },
     {
-        "id": "2",
-        "icon":{tick},
+        "id": "4",
+        "icon":m,
         
         "text": "Installation",
         "text_2": "and exceed the industry standards",
@@ -51,7 +51,7 @@ const MidlandNetworks = () => {
     
 
   return (
-    <div className="pt-16  lg:pl-[190px]  px-5  ">
+    <div className="py-16  lg:pl-[190px]  px-5  ">
       <p className="font-semibold text-[#29303b] text-[30px] mb-5 ">
       The Midland Networks difference.
         <span className="text-[#888f97]"> Thats right!</span>
@@ -63,14 +63,14 @@ const MidlandNetworks = () => {
           draggable
           hasArrows
        
-          slidesToShow={2.5}
+          slidesToShow={3.7}
           slidesToScroll={1}
 
           responsive={[
             {
               breakpoint: 400,
               settings: {
-                slidesToShow: 1.5,
+                slidesToShow: 3.7,
                 slidesToScroll: 1,
           
                 duration: 0.25,
