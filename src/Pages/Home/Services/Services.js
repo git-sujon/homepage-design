@@ -53,7 +53,7 @@ const Services = () => {
     <div className="pt-16  lg:pl-[190px]  px-5 ">
       <p className="font-semibold text-[#29303b] text-[30px] mb-5 ">
         Services.
-        <span className="text-[#888f97]">Here where the fun begins.</span>
+        <span className="text-[#888f97]"> Here where the fun begins.</span>
       </p>
       <div className=" my-10">
         
@@ -69,9 +69,9 @@ const Services = () => {
               {
                 breakpoint: 400,
                 settings: {
-                  slidesToShow: 1,
+                  slidesToShow: 1.5,
                   slidesToScroll: 1,
-                  itemWidth: 500,
+            
                   duration: 0.25,
                 },
               },
