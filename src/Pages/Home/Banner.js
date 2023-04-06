@@ -2,42 +2,51 @@ import React from "react";
 import bannerImage from "../../Resource/Image_website/banner.jpg";
 
 const Banner = () => {
+
+const textData=[ "Telecom", "Providers", "Engineers", "Data Cabler", "IT Experts", "Experienced" , "Passionate" ]
+
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat"
+      className="relative bg-cover bg-center bg-no-repeat lg:h-screen text-[#29303B]"
       style={{ backgroundImage: `url(${bannerImage})` }}
     >
       <div className="absolute inset-0    bg-white/50 md:bg-white/0"></div>
 
-      <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-        <div class="max-w-xl text-center sm:text-left">
+      <div class="relative mx-auto max-w-[980px]  px-4 py-32  lg:flex  lg:items-center ">
+        <div class="max-w-xl ">
           <h1 class="text-3xl font-semibold">
-          Midland Network <br />
-          
-        <div>
-        We are...
-        </div>
-        
+            Midland Network <br />
+            <div>We are...</div>
           </h1>
 
           <p class="mt-4 max-w-lg sm:leading-relaxed">
-          Midland Networks started life as a telecom company and it's still the major part of our business. We have expanded our services over the years at customer request to offer related services, providing our customers with one port of call.
+            Midland Networks started life as a telecom company and it's still
+            the major part of our business. We have expanded our services over
+            the years at customer request to offer related services, providing
+            our customers with one port of call.
           </p>
 
-          <div class="mt-8 flex flex-wrap gap-4 text-center">
-            <a
+          <div class="mt-8 flex  ">
+           <div className="w-40">
+           <a
               href="#"
-              class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              class=" border hover:border-none hover:bg-white uppercase rounded-xl  px-9 py-3 text-sm font-medium  border-black duration-300 ease-out"
             >
               About Us
             </a>
-
-            <a
+           </div>
+            
+           <div  className="w-40">
+           <a
               href="#"
-              class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+              class=" border hover:border-none hover:bg-white uppercase rounded-xl  px-9 py-3 text-sm font-medium  border-[#66c4f2] bg-[#66c4f2] text-white hover:text-[#29303B] transition duration-300 ease-out"
             >
-              Get In Touch
+              About Us
             </a>
+           </div>
+            
+
+           
           </div>
         </div>
       </div>
