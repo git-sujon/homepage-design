@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImage from "../../../Resource/Image_website/banner.jpg";
+import bannerImage from "../../../Resource/Image_website/Banner/banner.jpg";
 import Typewriter from "typewriter-effect";
 const Banner = () => {
 
