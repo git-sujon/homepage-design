@@ -10,6 +10,7 @@ import Testimonials from "./Testimonials/Testimonials";
 
 import AwardWinning from "./AwardWining/AwardWining";
 import OurBelives from "./OurBelives/OurBelives";
+import Subscribe from "./Subscribe/Subscribe";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Testimonials> </Testimonials>
       <AwardWinning></AwardWinning>
       <OurBelives></OurBelives>
+      <Subscribe></Subscribe>
     </div>
   );
 };

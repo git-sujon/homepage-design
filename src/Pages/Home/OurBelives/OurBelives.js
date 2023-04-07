@@ -36,8 +36,8 @@ const OurBelives = () => {
         </div>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mt-8">
               {/* first part */}
-          <div className=" ">
-            <div className="flex justify-center items-center text-center bg-white rounded-xl">
+          <div className="bg-white">
+            <div className="flex justify-center items-center text-center p-10  rounded-xl">
               <div>
                 <h4 className="text-[#c93254] text-xl  font-semibold uppercase  mb-1">
                   PASSION
@@ -53,8 +53,8 @@ const OurBelives = () => {
           </div>
 
           {/* first part */}
-          <div className=" ">
-            <div className="flex justify-center items-center text-center bg-white rounded-xl">
+          <div className="bg-white">
+            <div className="flex justify-center items-center text-center p-10 rounded-xl">
               <div>
                 <h4 className="text-[#c93254] text-xl  font-semibold uppercase  mb-1">
                 EXPERTISE
