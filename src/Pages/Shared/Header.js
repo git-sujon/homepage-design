@@ -122,14 +122,14 @@ const Header = () => {
            
                   <Link
                     to="/login"
-                    className="mt-2 transition-colors hover:rounded-full  duration-300 transform lg:mt-0 lg:mx-4 bg-[#66c4f2] hover:bg-white  hover:text-[#4c92d3] text-white px-4 py-1 border rounded-full"
+                    className="mt-2 transition-colors hover:rounded-full  duration-300 transform lg:mt-0 lg:mx-4 bg-[#66c4f2]  text-center hover:bg-white  hover:text-[#4c92d3] text-white px-4 py-1 border rounded-full"
                   >
                     Login
                   </Link>
 
                   <Link
                     to="/login"
-                    className="mt-2 transition-colors hover:rounded-full  duration-300 transform lg:mt-0 lg:mx-4hover:text-[#4c92d3] hover:text-[#4c92d3] px-4 py-1 "
+                    className="mt-2 transition-colors hover:rounded-full  duration-300 transform lg:mt-0 lg:mx-4hover:text-[#4c92d3] hover:text-[#4c92d3] px-4 py-1 text-center"
                   >
                     Sign Up
                   </Link>

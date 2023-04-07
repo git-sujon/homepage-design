@@ -2,10 +2,10 @@ import React from "react";
 import logo from "../../Resource/Images/Logo/logo.png";
 import { Link } from "react-router-dom";
 
-import {FaFacebookF, FaTwitter, FaYoutube} from 'react-icons/fa'
-import {CiLocationOn} from 'react-icons/ci'
-import {TbPhoneCall} from 'react-icons/tb'
-import {BiEnvelope} from 'react-icons/bi'
+import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import { ImLocation } from "react-icons/im";
+import { TbPhoneCall } from "react-icons/tb";
+import { BiEnvelope } from "react-icons/bi";
 
 const Footer = () => {
   const services = [
@@ -72,7 +72,7 @@ const Footer = () => {
   return (
     <div>
       <footer aria-label="Site Footer" className="bg-[#191d65] text-white">
-        <div className="mx-auto max-w-screen-lg px-4 pt-16 pb-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-lg  pt-16 pb-8 sm:px-6 px-8">
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-5  ">
             <div className="mx-auto  lg:col-span-2">
               <img src={logo} className="w-28 " alt="" />
@@ -96,7 +96,7 @@ const Footer = () => {
                 </a>
 
                 <a
-                   className="text-[#4c92d3] border-2 border-[#4c92d3] rounded-full p-2"
+                  className="text-[#4c92d3] border-2 border-[#4c92d3] rounded-full p-2"
                   href="https://twitter.com/"
                   target="_blank"
                   rel="noreferrer"
@@ -105,7 +105,7 @@ const Footer = () => {
                   <FaTwitter className="w-5 h-5"></FaTwitter>
                 </a>
                 <a
-                   className="text-[#b31212] border-2 border-[#b31212] rounded-full p-2"
+                  className="text-[#b31212] border-2 border-[#b31212] rounded-full p-2"
                   href="https://youtube.com/"
                   target="_blank"
                   rel="noreferrer"
@@ -117,22 +117,18 @@ const Footer = () => {
             </div>
 
             <div className=" grid  grid-cols-2 lg:grid-cols-3 lg:col-span-3 gap-0">
-
               <div>
-                <strong className="font-semibold  text-3xl ">
-                 Services
-                </strong>
+                <strong className="font-semibold  text-3xl ">Services</strong>
 
                 <nav
                   aria-label="Footer Services Nav"
                   className="mt-[52px] flex flex-col  text-base"
                 >
                   {services.map((service) => (
-                    <p
-                      key={service.id}
-                      className="w-44 mb-2"
-                    >
-                      <Link to="#" className="w-full" >{service.name}</Link>
+                    <p key={service.id} className="w-44 mb-2">
+                      <Link to="#" className="w-full">
+                        {service.name}
+                      </Link>
                     </p>
                   ))}
                 </nav>
@@ -140,7 +136,7 @@ const Footer = () => {
 
               <div>
                 <strong className="font-semibold  text-3xl ">
-                Useful Links
+                  Useful Links
                 </strong>
 
                 <nav
@@ -148,39 +144,52 @@ const Footer = () => {
                   className="mt-[52px] flex flex-col  text-base"
                 >
                   {useful_links.map((links) => (
-                    <p
-                      key={links.id}
-                      className="w-44 mb-2"
-                    >
-                      <Link to="#" className="w-full" >{links.name}</Link>
+                    <p key={links.id} className="w-44 mb-2">
+                      <Link to="#" className="w-full">
+                        {links.name}
+                      </Link>
                     </p>
                   ))}
                 </nav>
               </div>
 
-              <div>
-                <strong className="font-semibold  text-3xl ">
-                Contact Us
-                </strong>
+              <div className="pt-10 md:pt-0">
+                <strong className="font-semibold  text-3xl ">Contact Us</strong>
 
                 <div
                   aria-label="Contact"
-                  className="mt-[52px] flex flex-col  text-base"
+                  className="mt-[52px] flex flex-col  text-base gap-5"
                 >
-               <div className="flex gap-5 justify-center items-start">
+                  <div className="flex gap-2  items-start">
+                    <p className="  bg-[#4ca4d7] rounded-full p-2">
+                      <ImLocation className=" w-5 h-5"></ImLocation>
+                    </p>
+                    <span>
+                      Midland Networks Group Holdings Ltd,
+                      <br /> Commercial House, 21a Stone Street,
+                      <br /> Dudley, West Midlands, DY1 1NJ
+                    </span>
+                  </div>
+                  
+                  <div className="flex gap-2  items-start">
+                    <p className="  bg-[#4ca4d7] rounded-full p-2">
+                      <TbPhoneCall className=" w-5 h-5"></TbPhoneCall>
+                    </p>
+                    <span>
+                    0800 849 8585
+                    </span>
+                  </div>
 
-                
-                <p className=" text-[#4ca4d7] border-2 border-[#4ca4d7] rounded-full p-2"><CiLocationOn className="w-5 h-5"></CiLocationOn></p>
-             <span>
-             Midland Networks Group Holdings Ltd,<br/> Commercial House, 21a Stone Street,<br/> Dudley, West Midlands, DY1 1NJ
-             </span>
-               </div>
+                  <div className="flex gap-2  items-start">
+                    <p className="  bg-[#4ca4d7] rounded-full p-2">
+                      <BiEnvelope className=" w-5 h-5"></BiEnvelope>
+                    </p>
+                    <span>
+                    hello@midlandnetworks.co.uk
+                    </span>
+                  </div>
                 </div>
               </div>
-
-
-        
-            
             </div>
           </div>
 
