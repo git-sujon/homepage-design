@@ -9,6 +9,7 @@ import Brands from "./Brands/Brands";
 import Testimonials from "./Testimonials/Testimonials";
 
 import AwardWinning from "./AwardWining/AwardWining";
+import OurBelives from "./OurBelives/OurBelives";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Brands></Brands>
       <Testimonials> </Testimonials>
       <AwardWinning></AwardWinning>
+      <OurBelives></OurBelives>
     </div>
   );
 };
