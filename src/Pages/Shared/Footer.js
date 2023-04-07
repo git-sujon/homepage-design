@@ -3,6 +3,9 @@ import logo from "../../Resource/Images/Logo/logo.png";
 import { Link } from "react-router-dom";
 
 import {FaFacebookF, FaTwitter, FaYoutube} from 'react-icons/fa'
+import {CiLocationOn} from 'react-icons/ci'
+import {TbPhoneCall} from 'react-icons/tb'
+import {BiEnvelope} from 'react-icons/bi'
 
 const Footer = () => {
   const services = [
@@ -68,12 +71,12 @@ const Footer = () => {
 
   return (
     <div>
-      <footer aria-label="Site Footer" className="bg-[#191d65] ">
+      <footer aria-label="Site Footer" className="bg-[#191d65] text-white">
         <div className="mx-auto max-w-screen-lg px-4 pt-16 pb-8 sm:px-6 lg:px-8">
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-32">
-            <div className="mx-auto max-w-sm lg:max-w-none">
+          <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-5  ">
+            <div className="mx-auto  lg:col-span-2">
               <img src={logo} className="w-28 " alt="" />
-              <p className="mt-4 text-center text-white lg:text-left lg:text-lg">
+              <p className="mt-4 text-center  lg:text-left lg:text-lg">
                 Midland Networks started life as a business lines and calls
                 provider in Birmingham City Centre, we moved our offices to
                 Halesowen in 2012. We expanded over the following years to cover
@@ -113,44 +116,76 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-2 lg:text-left">
+            <div className=" grid  grid-cols-2 lg:grid-cols-3 lg:col-span-3 gap-0">
+
               <div>
-                <strong className="font-medium text-gray-900 text-white">
-                  Our Courses
+                <strong className="font-semibold  text-3xl ">
+                 Services
                 </strong>
 
                 <nav
                   aria-label="Footer Services Nav"
-                  className="mt-6 flex flex-col space-y-1"
+                  className="mt-[52px] flex flex-col  text-base"
                 >
-                  {/* {services.map((service) => (
+                  {services.map((service) => (
                     <p
-                      key={service}
-                      className='"text-white hover:text-white/75'
+                      key={service.id}
+                      className="w-44 mb-2"
                     >
-                      <Link to="#">{service}</Link>
+                      <Link to="#" className="w-full" >{service.name}</Link>
                     </p>
-                  ))} */}
+                  ))}
                 </nav>
               </div>
 
               <div>
-                <strong className="font-medium text-gray-900 text-white">
-                  Site Map
+                <strong className="font-semibold  text-3xl ">
+                Useful Links
                 </strong>
 
                 <nav
-                  aria-label="Footer About Nav"
-                  className="mt-6 flex flex-col space-y-1"
+                  aria-label="Footer Services Nav"
+                  className="mt-[52px] flex flex-col  text-base"
                 >
-                 
+                  {useful_links.map((links) => (
+                    <p
+                      key={links.id}
+                      className="w-44 mb-2"
+                    >
+                      <Link to="#" className="w-full" >{links.name}</Link>
+                    </p>
+                  ))}
                 </nav>
               </div>
+
+              <div>
+                <strong className="font-semibold  text-3xl ">
+                Contact Us
+                </strong>
+
+                <div
+                  aria-label="Contact"
+                  className="mt-[52px] flex flex-col  text-base"
+                >
+               <div className="flex gap-5 justify-center items-start">
+
+                
+                <p className=" text-[#4ca4d7] border-2 border-[#4ca4d7] rounded-full p-2"><CiLocationOn className="w-5 h-5"></CiLocationOn></p>
+             <span>
+             Midland Networks Group Holdings Ltd,<br/> Commercial House, 21a Stone Street,<br/> Dudley, West Midlands, DY1 1NJ
+             </span>
+               </div>
+                </div>
+              </div>
+
+
+        
+            
             </div>
           </div>
 
           <div className="mt-16 border-t border-gray-100 pt-8 ">
-            <p className="text-center text-base font-semibold leading-relaxed text-white">
+            <p className="text-center text-base font-semibold leading-relaxed ">
               © 2022 Midland Networks Group Holdings Ltd. All Rights Reserved.
             </p>
           </div>
