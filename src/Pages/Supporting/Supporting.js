@@ -3,7 +3,7 @@ import supporting_image from "../../Resource/Images/Supporting/img-32.png";
 
 const Supporting = () => {
   return (
-  <div className="bg-white  py-16">
+  <div className="bg-white  pt-16">
       <div class=" bg-[#f5f5f7]  grid md:grid-cols-2 gap-10  lg:mx-[190px] mx-auto  px-5  rounded-xl p-12 ">
       <div class="pl-12">
         <div class=" text-center sm:text-left">

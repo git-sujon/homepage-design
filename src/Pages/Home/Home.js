@@ -5,6 +5,7 @@ import Services from "./Services/Services";
 import Help from "./Help/Help";
 import MidlandNetworks from "./MidlandNetworks/MidlandNetworks";
 import Supporting from "../Supporting/Supporting";
+import Brands from "./Brands/Brands";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Help></Help>
       <MidlandNetworks></MidlandNetworks>
       <Supporting></Supporting>
+      <Brands></Brands>
     </div>
   );
 };
