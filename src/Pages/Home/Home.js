@@ -4,6 +4,7 @@ import Banner from "../Home/Banner/Banner";
 import Services from "./Services/Services";
 import Help from "./Help/Help";
 import MidlandNetworks from "./MidlandNetworks/MidlandNetworks";
+import Supporting from "../Supporting/Supporting";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Services></Services>
       <Help></Help>
       <MidlandNetworks></MidlandNetworks>
+      <Supporting></Supporting>
     </div>
   );
 };
