@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CardDetails from "./CardDetails";
 import Glider from "react-glider";
-import "glider-js/glider.min.css";
+import 'glider-js/glider.min.css'; 
 
 import guard from "../../../Resource/SVG/guard.svg";
 import love from "../../../Resource/SVG/love.svg";
@@ -63,24 +63,28 @@ const MidlandNetworks = () => {
         <span className="text-[#888f97]"> Thats right!</span>
       </p>
       <div className=" my-10">
-        <Glider
-          className="glider-container"
-          draggable
-          hasArrows
-          slidesToShow={3.6}
-          slidesToScroll={1}
-          responsive={[
-            {
-              breakpoint: 400,
-              settings: {
-                slidesToShow: 1.5,
-                slidesToScroll: 1,
+      <Glider
+            className="glider-container"
+            draggable
+            hasArrows
+         
+            slidesToShow={2.5}
+            slidesToScroll={1}
 
-                duration: 0.25,
+            responsive={[
+              {
+                breakpoint: 400,
+                settings: {
+                  slidesToShow: 2.5,
+                  slidesToScroll: 1,
+            
+                  duration: 0.25,
+                },
               },
-            },
-          ]}
-        >
+            ]}
+
+            
+          >
           {infoData?.map((data) => (
             <CardDetails key={data.id} data={data} />
           ))}

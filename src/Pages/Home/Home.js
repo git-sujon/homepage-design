@@ -8,6 +8,8 @@ import Supporting from "../Supporting/Supporting";
 import Brands from "./Brands/Brands";
 import Testimonials from "./Testimonials/Testimonials";
 
+import AwardWinning from "./AwardWining/AwardWining";
+
 const Home = () => {
   return (
     <div className="bg-[#f5f5f7] ">
@@ -18,6 +20,7 @@ const Home = () => {
       <Supporting></Supporting>
       <Brands></Brands>
       <Testimonials> </Testimonials>
+      <AwardWinning></AwardWinning>
     </div>
   );
 };

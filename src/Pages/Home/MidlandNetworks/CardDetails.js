@@ -1,5 +1,4 @@
 import React from "react";
-import dd from "../../../Resource/SVG/guard.svg";
 const CardDetails = ({ data }) => {
   const { icon, text, text_2, text_color2 } = data;
 
