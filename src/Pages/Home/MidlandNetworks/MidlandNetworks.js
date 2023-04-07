@@ -73,7 +73,7 @@ const MidlandNetworks = () => {
             {
               breakpoint: 400,
               settings: {
-                slidesToShow: 3.6,
+                slidesToShow: 1.5,
                 slidesToScroll: 1,
 
                 duration: 0.25,
