@@ -76,7 +76,7 @@ const Footer = () => {
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-5  ">
             <div className="mx-auto  lg:col-span-2">
               <img src={logo} className="w-28 " alt="" />
-              <p className="mt-4 text-center  lg:text-left lg:text-lg">
+              <p className="mt-4   lg:text-lg">
                 Midland Networks started life as a business lines and calls
                 provider in Birmingham City Centre, we moved our offices to
                 Halesowen in 2012. We expanded over the following years to cover
@@ -84,7 +84,7 @@ const Footer = () => {
                 all over the UK.
               </p>
 
-              <div className="mt-6 flex justify-center gap-4 lg:justify-start">
+              <div className="mt-6 flex gap-4 justify-start">
                 <a
                   className="text-[#0a81ed] border-2 border-[#0a81ed] rounded-full p-2"
                   href="https://www.facebook.com/"
