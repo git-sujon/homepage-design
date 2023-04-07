@@ -6,6 +6,7 @@ import Help from "./Help/Help";
 import MidlandNetworks from "./MidlandNetworks/MidlandNetworks";
 import Supporting from "../Supporting/Supporting";
 import Brands from "./Brands/Brands";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <MidlandNetworks></MidlandNetworks>
       <Supporting></Supporting>
       <Brands></Brands>
+      <Testimonials> </Testimonials>
     </div>
   );
 };
